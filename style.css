@@ -1,9 +1,142 @@
-:root{
-    --red: red;
-    --just-white:#fff;
-}
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+html {
+    font-size: 62.5%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.background {
+    background-image: url("./Asset/FONDO.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.background::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+
+    }
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.nav-bar img {
+    width: 133px;
+    height: 36px;
+    padding: 5px 16px;
+    margin-top: 10px;
+    margin-left: 14px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.idiomas {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.nav-left select {
+    width: 90px;
+    height: 25px;
+    background: transparent;
+    background-image: none;
+    color: #fff;
+}
+
+select:hover{
+    background-color: gray;
+}
+
+.nav-left button {
+    margin: 17px;
+    width: 90px;
+    height: 25px;
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+.Title {
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 75px 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    
+}
+
+.Title  h1 {
+    max-width: 640px;
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 5.2rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Title h2{
+    margin: 16px auto;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Title p {
+    padding-bottom: 20px;
+    margin: 0;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 850px;
+}
+
+.Title .email {
+    width: 450px;
+    height: 60px;
+    border: none;
+    padding: 10px 10px 0;
+}
+
+.Title .submit {
+    margin: 0;
+    width:  200px;
+    height: 60px;
+    background-color: red;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+}
+
