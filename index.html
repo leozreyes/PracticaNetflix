@@ -14,14 +14,11 @@
     <div class="background">
                 <header>  
                     <nav class="nav-bar">
-                        <img  src="./Asset/Netflix_2015_logo.svg" alt="Netflix">
+                        <img  src="./Asset/Videos_Shonos-removebg-preview.png" alt="Netflix">
                             <div class="nav-left">
-                                    <select name="Idioma" id="">
-                                        <option value="1">Español</option>
-                                        <option value="2">Ingles</option>
-                                    </select>
+                                    <input class="idioma" type="button" value="Español ▼"s>
                                 <a href="#">
-                                    <Button type="submit">Iniciar sesiòn</Button>
+                                    <Button type="submit">Iniciar sesion</Button>
                                 </a>
                             </div>
                     </nav>
@@ -29,9 +26,10 @@
                 <main class="Title">
                     <h1>Películas y series ilimitadas y mucho más.</h1>
                     <h2>Disfruta donde quieras. Cancela cuando quieras.</h2>
-                    <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
-                    <form class="input-group" action="">
-                        <input type="email" class="email" name="email" placeholder="Email"><input type="submit" class="submit" value="Empezar ">
+                    <p>¿Quieres ver un video ya? Ingresa el titulo del video que buscas para encontrarlo.</p>
+                    <form class="input-group" action="https://www.imdb.com/">
+                        <input type="search" class="email" name="email" placeholder="Que quieres ver?" required>
+                        <input type="submit" class="submit" value="Buscar">
                     </form>
                 </main>
     </div>

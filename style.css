@@ -11,7 +11,7 @@ html {
     font-family:Arial, Helvetica, sans-serif;
 }
 .background {
-    background-image: url("./Asset/FONDO.jpg");
+    background-image: url("./Asset/arrangement-of-movie-elements-on-black-background.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -26,7 +26,7 @@ html {
     width: 100%;
     height: 100%;
     content: "";
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.4);
 
     }
 
@@ -39,8 +39,9 @@ html {
 }
 
 .nav-bar img {
-    width: 133px;
-    height: 36px;
+    width: 180px;
+    height: 60px;
+    object-fit: cover;
     padding: 5px 16px;
     margin-top: 10px;
     margin-left: 14px;
@@ -57,17 +58,21 @@ html {
     
 }
 
-.nav-left select {
+.nav-left .idioma {
     width: 90px;
     height: 25px;
     background: transparent;
     background-image: none;
     color: #fff;
+    border-radius: 4px;
+    border-color: #fff;
 }
 
-select:hover{
-    background-color: gray;
+.idioma:hover {
+    background-color: crimson;
+    cursor: pointer;
 }
+
 
 .nav-left button {
     margin: 17px;
@@ -76,7 +81,8 @@ select:hover{
     background-color: red;
     color: #fff;
     border-radius: 5px;
-    font-size: 10px;
+    font-size: 12px;
+    cursor: pointer;
 }
 
 .Title {
